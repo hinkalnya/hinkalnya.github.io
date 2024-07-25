@@ -2,13 +2,13 @@ import React from "react"
 
 function Task({ title, description, price }) {
     return (
-        <div className="task">
-            <h3>{title}</h3>
+        <div className="task m-3 p-4 max-h-full duration-500">
+            <h3 className="text-lg mb-1">{title}</h3>
 
-            <p className="description">{description}</p>
+            <p className="mb-10">{description}</p>
 
             <p className="price">
-                {price.min} to {price.max}€
+                Price: from {price.min} to {price.max}
             </p>
 
             <button className="accept">I need this!</button>
