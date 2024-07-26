@@ -5,7 +5,7 @@ import { faqData } from "./data"
 
 const App = () => {
     return (
-        <div className="container">
+        <div className="wrapper p-3">
             <header>
                 <h1 className="text-3xl">University Task Helper</h1>
                 <p className="mt-2">

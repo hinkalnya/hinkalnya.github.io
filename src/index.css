@@ -2,63 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #feffff;
-}
-
-.container {
-    padding: 20px;
-}
-
-button {
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    padding: 10px 20px;
-    cursor: pointer;
-    margin: 20px auto;
-    display: block;
-}
-
-button:hover {
-    background-color: #0056b3;
-}
-
-.popular-tasks {
-    display: flex;
-    flex-wrap: wrap;
-    gap: auto;
-    justify-content: center;
-}
-
-.faq-item {
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    box-shadow: 0px 0px 5px #ddd;
-}
-
-.faq-item:hover {
-    box-shadow: 0px 0px 5px #bbb;
+.faq {
+    @apply mt-4 p-3 rounded-md duration-300 bg-gray-50 border border-gray-300 shadow-md hover:shadow-md hover:shadow-gray-400 cursor-pointer select-none;
 }
 
 .task {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 300px;
-
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px #ddd;
-}
-
-.task:hover {
-    box-shadow: 0px 0px 10px #aaa;
+    @apply m-3 p-4 rounded-lg duration-500 max-w-72 bg-gray-50 border border-gray-300 shadow-md hover:shadow-lg hover:shadow-gray-400 flex flex-col items-center;
 }
