@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 
-const Faq = ({ faq: { question, answer } }) => {
+const Faq = ({ question, answer }) => {
     const [isVisible, setIsVisible] = useState(false)
 
     const toggleVisibility = () => {
