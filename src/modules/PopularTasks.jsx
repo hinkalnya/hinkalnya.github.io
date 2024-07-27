@@ -1,4 +1,3 @@
-import React from "react"
 import Task from "../components/Task"
 import { popularTasks } from "../data.js"
 

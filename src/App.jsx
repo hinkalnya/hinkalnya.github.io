@@ -1,26 +1,16 @@
-import React from "react"
-import PopularTasks from "./modules/PopularTasks"
-import FaqSection from "./modules/FaqSection"
-import { faqData } from "./data"
+import { BrowserRouter, Routes, Route } from "react-router-dom"
+import Home from "./pages/Home"
+import NoPage from "./pages/NoPage"
 
 const App = () => {
     return (
         <div className="wrapper p-3">
-            <header>
-                <h1 className="text-3xl">University Task Helper</h1>
-                <p className="mt-2">
-                    Offering comprehensive assistance with homeworks, lab works
-                    and tests.
-                </p>
-            </header>
-            <section>
-                <h2 className="text-2xl mt-4">Popular orders</h2>
-                <PopularTasks />
-            </section>
-            <section>
-                <h2 className="text-2xl mt-4">FAQ</h2>
-                <FaqSection faqs={faqData} />
-            </section>
+            <BrowserRouter>
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="*" element={<NoPage />} />
+                </Routes>
+            </BrowserRouter>
         </div>
     )
 }
