@@ -1,8 +1,7 @@
 import PopularTasks from "../modules/PopularTasks"
 import FaqSection from "../modules/FaqSection"
-import { faqData } from "../data"
 
-const Home = () => {
+const Home = ({ faq, tasks }) => {
     return (
         <>
             <header>
@@ -14,11 +13,11 @@ const Home = () => {
             </header>
             <section>
                 <h2 className="text-2xl mt-4">Popular orders</h2>
-                <PopularTasks />
+                <PopularTasks tasks={tasks} />
             </section>
             <section>
                 <h2 className="text-2xl mt-4">FAQ</h2>
-                <FaqSection faqs={faqData} />
+                <FaqSection faqs={faq} />
             </section>
         </>
     )

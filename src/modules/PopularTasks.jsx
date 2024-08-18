@@ -1,17 +1,19 @@
 import Task from "../components/Task"
-import { popularTasks } from "../data.js"
 
-const PopularTasks = () => {
+const PopularTasks = ({ tasks }) => {
     return (
         <div className="popular-tasks flex flex-wrap justify-center">
-            {popularTasks.map((task, index) => (
-                <Task
-                    title={task.title}
-                    description={task.description}
-                    price={task.price}
-                    key={index}
-                />
-            ))}
+            {tasks &&
+                tasks
+                    .slice(0, 6)
+                    .map((task, index) => (
+                        <Task
+                            title={task.title}
+                            description={task.description}
+                            price={task.price}
+                            key={index}
+                        />
+                    ))}
         </div>
     )
 }
