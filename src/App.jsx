@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react"
-import { BrowserRouter, Routes, Route } from "react-router-dom"
+import { HashRouter, Routes, Route } from "react-router-dom"
 import Home from "./pages/Home"
 import NoPage from "./pages/NoPage"
 
@@ -29,7 +29,7 @@ const App = () => {
             {!data.faq || !data.tasks ? (
                 <div className="text-xl text-center">Loading...</div>
             ) : (
-                <BrowserRouter>
+                <HashRouter>
                     <Routes>
                         <Route
                             path="/"
@@ -37,7 +37,7 @@ const App = () => {
                         />
                         <Route path="*" element={<NoPage />} />
                     </Routes>
-                </BrowserRouter>
+                </HashRouter>
             )}
         </div>
     )
