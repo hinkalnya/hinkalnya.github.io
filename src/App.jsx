@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react"
 import { HashRouter, Routes, Route } from "react-router-dom"
 import Home from "./pages/Home"
+import Tasks from "./pages/Tasks"
 import NoPage from "./pages/NoPage"
 
 const App = () => {
@@ -31,6 +32,10 @@ const App = () => {
             ) : (
                 <HashRouter>
                     <Routes>
+                        <Route
+                            path="/tasks"
+                            element={<Tasks tasks={data.tasks} />}
+                        />
                         <Route
                             path="/"
                             element={<Home faq={data.faq} tasks={data.tasks} />}

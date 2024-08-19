@@ -1,4 +1,4 @@
-import PopularTasks from "../modules/PopularTasks"
+import ListTasks from "../modules/ListTasks"
 import FaqSection from "../modules/FaqSection"
 
 const Home = ({ faq, tasks }) => {
@@ -13,7 +13,7 @@ const Home = ({ faq, tasks }) => {
             </header>
             <section>
                 <h2 className="text-2xl mt-4">Popular orders</h2>
-                <PopularTasks tasks={tasks} />
+                <ListTasks tasks={tasks} />
             </section>
             <section>
                 <h2 className="text-2xl mt-4">FAQ</h2>
