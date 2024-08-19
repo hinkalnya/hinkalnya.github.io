@@ -13,7 +13,7 @@ const Home = ({ faq, tasks }) => {
             </header>
             <section>
                 <h2 className="text-2xl mt-4">Popular orders</h2>
-                <ListTasks tasks={tasks} />
+                <ListTasks tasks={tasks} limit={6} />
             </section>
             <section>
                 <h2 className="text-2xl mt-4">FAQ</h2>
