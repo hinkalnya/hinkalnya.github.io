@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/rtu-task-helper/static/css/main.0b6693c5.css",
-    "main.js": "/rtu-task-helper/static/js/main.6adbea5b.js",
+    "main.js": "/rtu-task-helper/static/js/main.5e1b7960.js",
     "index.html": "/rtu-task-helper/index.html",
     "main.0b6693c5.css.map": "/rtu-task-helper/static/css/main.0b6693c5.css.map",
-    "main.6adbea5b.js.map": "/rtu-task-helper/static/js/main.6adbea5b.js.map"
+    "main.5e1b7960.js.map": "/rtu-task-helper/static/js/main.5e1b7960.js.map"
   },
   "entrypoints": [
     "static/css/main.0b6693c5.css",
-    "static/js/main.6adbea5b.js"
+    "static/js/main.5e1b7960.js"
   ]
 }
