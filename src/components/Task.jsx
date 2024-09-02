@@ -7,8 +7,9 @@ const Task = ({ title, description, price }) => {
                 Price: from {price.min} to {price.max}
             </div>
 
-            <button className="task-button px-2 py-1 m-2 rounded-md bg-blue-500 text-white hover:bg-blue-600 duration-300">
-                I need this!
+            <button className="task-button px-2 py-1 m-2 rounded-md bg-blue-500 text-white hover:bg-blue-600 duration-300"
+                    onClick={() => window.open('https://t.me/archlinux_btw', '_blank')}>
+                Contact me
             </button>
         </div>
     )
